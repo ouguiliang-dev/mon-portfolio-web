@@ -4,32 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - [Ton Nom]</title>
+    <meta name="description" content="Portfolio bilingue français-chinois de Guillaume Aubry, combinant IT et langues.">
+    <meta name="keywords" content="portfolio, chinois, IT, traduction, développement web">
+    <title>Portfolio - Guillaume Aubry | IT & Chinois</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- En-tête avec bouton de langue -->
     <header>
-        <h1>Salut, je suis Guillaume Aubry !</h1>
-        <p>Débutant motivé en IT, passionné par le dev web.</p>
+        <div class="lang-switcher">
+            <button onclick="switchLanguage('fr')">FR</button>
+            <button onclick="switchLanguage('zh')">中文</button>
+        </div>
+        <h1 data-lang="fr">Salut, je suis Guillaume Aubry !</h1>
+        <h1 data-lang="zh" style="display: none;">你好，我是纪尧姆·帕尔默！</h1>
+        <p data-lang="fr">Débutant motivé en IT, passionné par le dev web et la langue chinoise.</p>
+        <p data-lang="zh" style="display: none;">热衷于IT开发和中文的初学者，正在积极寻求职业转型机会。</p>
     </header>
 
+    <!-- Section "À propos" -->
     <section id="a-propos">
-        <h2>À propos</h2>
-        <p>Je vis à selles sur cher, autodidacte en HTML/CSS/JS.</p>
+        <h2 data-lang="fr">À propos</h2>
+        <h2 data-lang="zh" style="display: none;">关于我</h2>
+        <p data-lang="fr">
+            Je vis entre la France et la Chine, où j'ai passé 16 ans. Mon objectif : combiner mes compétences en IT et
+            en chinois pour des projets innovants.
+            Actuellement en reconversion professionnelle, je cherche des opportunités dans les domaines de la traduction
+            technique, du développement web, ou des postes IT nécessitant des compétences linguistiques.
+        </p>
+        <p data-lang="zh" style="display: none;">
+            我生活在法国和中国之间，在中国度过了16年。我的目标是将我的IT技能和中文能力结合起来，用于创新项目。
+            目前正在职业转型中，寻找技术翻译、网页开发或需要语言技能的IT职位的机会。
+        </p>
     </section>
 
+    <!-- Section "Projets" -->
     <section id="projets">
-        <h2>Projets</h2>
+        <h2 data-lang="fr">Projets</h2>
+        <h2 data-lang="zh" style="display: none;">项目</h2>
         <ul>
-            <li><strong>Ce site !</strong> - Mon premier portfolio responsive.</li>
+            <li data-lang="fr"><strong>Ce site !</strong> - Mon premier portfolio responsive, combinant HTML/CSS/JS et
+                contenu bilingue.</li>
+            <li data-lang="zh" style="display: none;"><strong>这个网站！</strong> - 我的第一个响应式作品集，结合了HTML/CSS/JS和双语内容。</li>
+            <li data-lang="fr"><strong>Site Bruce Lee (2008)</strong> - Un site en XHTML/PHP/SQL créé en 2008, avec une
+                base de données et des images Photoshop. Projet à recréer plus tard.</li>
+            <li data-lang="zh" style="display: none;"><strong>李小龙·法国网站（2008年）</strong> -
+                2008年用XHTML/PHP/SQL创建的网站，带有数据库和Photoshop图片。计划将来重新创建。</li>
         </ul>
     </section>
 
+    <!-- Section "Compétences" -->
+    <section id="competences">
+        <h2 data-lang="fr">Compétences</h2>
+        <h2 data-lang="zh" style="display: none;">技能</h2>
+        <ul>
+            <li data-lang="fr"><strong>Langues :</strong> Français (natif), Chinois (niveau C1, 16 ans en Chine),
+                Anglais (intermédiaire).</li>
+            <li data-lang="zh" style="display: none;"><strong>语言：</strong> 法语（母语），中文（C1水平，在中国生活10年），英语（中级）。</li>
+            <li data-lang="fr"><strong>IT :</strong> HTML/CSS/JS, XHTML, PHP/SQL, Git/GitHub, Photoshop.</li>
+            <li data-lang="zh" style="display: none;"><strong>IT：</strong> HTML/CSS/JS, XHTML, PHP/SQL, Git/GitHub,
+                Photoshop。</li>
+        </ul>
+    </section>
+
+    <!-- Section "Contact" -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : email@example.com</p>
-        <button onclick="showMessage()">Dis-moi bonjour !</button>
+        <h2 data-lang="fr">Contact</h2>
+        <h2 data-lang="zh" style="display: none;">联系我</h2>
+        <p data-lang="fr">Email : tonemail@example.com | LinkedIn : https://www.linkedin.com/in/guillaume-aubry-65751842
+        </p>
+        <p data-lang="zh" style="display: none;">邮箱：tonemail@example.com |
+            领英：https://www.linkedin.com/in/guillaume-aubry-65751842</p>
+        <button onclick="redirectToLinkedIn()" data-lang="fr">Contactez-moi sur LinkedIn !</button>
+        <button onclick="redirectToLinkedIn()" data-lang="zh" style="display: none;">在领英联系我！</button>
     </section>
 
     <script src="script.js"></script>

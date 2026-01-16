@@ -1,35 +1,90 @@
-/* Style général */
+/* Style général du corps de la page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f2f5;
-    color: #333;
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+    /* Police compatible avec le chinois */
     line-height: 1.6;
+    /* Espacement entre les lignes pour une meilleure lisibilité */
+    color: #333;
+    /* Couleur de texte principale */
+    background: #f9f9f9;
+    /* Fond clair pour un contraste agréable */
+    margin: 0;
+    /* Supprime les marges par défaut */
+    padding: 0;
+    /* Supprime les espacements par défaut */
 }
 
-/* En-tête */
+/* Style de l'en-tête */
 header {
-    text-align: center;
-    background: #2c3e50;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    /* Dégradé bleu moderne */
     color: white;
-    padding: 40px;
-    border-radius: 10px;
+    /* Texte blanc pour contraste */
+    text-align: center;
+    /* Centrage du texte */
+    padding: 2rem 1rem;
+    /* Espacement interne (responsive) */
+    position: relative;
+    /* Permet de positionner le bouton de langue */
     margin-bottom: 20px;
+    /* Espace sous l'en-tête */
 }
 
-/* Sections */
+/* Boutons de changement de langue */
+.lang-switcher button {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fond semi-transparent */
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lang-switcher button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* Effet au survol */
+}
+
+/* Style des sections (À propos, Projets, Contact) */
 section {
-    margin: 20px 0;
+    margin: 20px auto;
+    /* Centrage horizontal */
     padding: 20px;
+    max-width: 800px;
+    /* Largeur maximale pour une meilleure lisibilité */
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour le relief */
 }
 
-/* Bouton interactif */
-button {
+/* Style des titres de section */
+section h2 {
+    color: #2c3e50;
+    /* Couleur sobre pour les titres */
+    border-bottom: 2px solid #3a7bd5;
+    /* Ligne sous le titre */
+    padding-bottom: 10px;
+}
+
+/* Style des listes (pour la section Projets) */
+section ul {
+    padding-left: 20px;
+    /* Retrait pour les puces */
+}
+
+section li {
+    margin-bottom: 8px;
+    /* Espace entre les éléments de liste */
+}
+
+/* Style des boutons interactifs (ex: "Dis-moi bonjour") */
+button:not(.lang-switcher button) {
     background: #3498db;
+    /* Bleu vif */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -37,8 +92,38 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s;
+    /* Animation fluide */
+    display: inline-block;
+    /* Pour un meilleur alignement */
+    margin-top: 10px;
 }
 
-button:hover {
+button:not(.lang-switcher button):hover {
     background: #2980b9;
+    /* Bleu plus foncé au survol */
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+        /* Titre plus petit sur mobile */
+    }
+
+    section {
+        padding: 15px;
+        /* Espacement réduit */
+        margin: 10px;
+        /* Marge réduite */
+    }
+
+    .lang-switcher {
+        top: 5px;
+        right: 5px;
+    }
+
+    .lang-switcher button {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
 }
