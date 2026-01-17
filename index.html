@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio bilingue français-chinois de Guillaume Aubry, combinant IT et langues.">
-    <meta name="keywords" content="portfolio, chinois, IT, traduction, développement web">
-    <title>Portfolio - Guillaume Aubry | IT & Chinois</title>
+    <meta name="description"
+        content="Portfolio bilingue français-chinois de Guillaume Aubry (欧贵良), combinant IT et langues. 16 ans d'expérience en Chine.">
+    <meta name="keywords" content="portfolio, chinois, IT, traduction, développement web, Guillaume Aubry, 欧贵良">
+    <title>Portfolio - Guillaume Aubry (欧贵良) | IT & Chinois</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,10 +19,10 @@
             <button onclick="switchLanguage('fr')">FR</button>
             <button onclick="switchLanguage('zh')">中文</button>
         </div>
-        <h1 data-lang="fr">Salut, je suis Guillaume Aubry !</h1>
-        <h1 data-lang="zh" style="display: none;">你好，我是纪尧姆·帕尔默！</h1>
-        <p data-lang="fr">Débutant motivé en IT, passionné par le dev web et la langue chinoise.</p>
-        <p data-lang="zh" style="display: none;">热衷于IT开发和中文的初学者，正在积极寻求职业转型机会。</p>
+        <h1 data-lang="fr">Guillaume Aubry (欧贵良)</h1>
+        <h1 data-lang="zh" style="display: none;">欧贵良 (Guillaume Aubry)</h1>
+        <p data-lang="fr">En reconversion IT + Chinois | 16 ans d'expérience en Chine</p>
+        <p data-lang="zh" style="display: none;">IT + 中文转型中 | 在中国生活工作16年</p>
     </header>
 
     <!-- Section "À propos" -->
@@ -29,15 +30,58 @@
         <h2 data-lang="fr">À propos</h2>
         <h2 data-lang="zh" style="display: none;">关于我</h2>
         <p data-lang="fr">
-            Je vis entre la France et la Chine, où j'ai passé 16 ans. Mon objectif : combiner mes compétences en IT et
-            en chinois pour des projets innovants.
-            Actuellement en reconversion professionnelle, je cherche des opportunités dans les domaines de la traduction
-            technique, du développement web, ou des postes IT nécessitant des compétences linguistiques.
+            Je m'appelle Guillaume Aubry (欧贵良), et je combine des compétences en <strong>IT</strong> (HTML/CSS, PHP/SQL,
+            JavaScript) et en <strong>chinois</strong> (niveau natif après 16 ans en Chine).
+            <br><br>
+            Mon objectif : travailler sur des projets <strong>bilingues</strong> (traduction technique, localisation de
+            sites web, postes IT en Chine).
+            <br>
+            Actuellement en <strong>reconversion professionnelle</strong>, je prépare une VAE pour une licence LLCE/LEA.
         </p>
         <p data-lang="zh" style="display: none;">
-            我生活在法国和中国之间，在中国度过了16年。我的目标是将我的IT技能和中文能力结合起来，用于创新项目。
-            目前正在职业转型中，寻找技术翻译、网页开发或需要语言技能的IT职位的机会。
+            我叫欧贵良（Guillaume Aubry），拥有<strong>IT技能</strong>（HTML/CSS, PHP/SQL,
+            JavaScript）和<strong>中文能力</strong>（在中国生活16年，中文水平接近母语）。
+            <br><br>
+            我的目标是从事<strong>双语项目</strong>（技术翻译、网站本地化、在中国的IT岗位）。
+            <br>
+            目前正在<strong>职业转型</strong>，准备通过VAE获得LEA/LLCE学位。
         </p>
+    </section>
+
+    <!-- Section "Expérience en Chine" -->
+    <section id="experience-chine">
+        <!-- Titre français/chinois -->
+        <h2 data-lang="fr">Expérience en Chine</h2>
+        <h2 data-lang="zh" style="display: none;">在中国的经历</h2>
+
+        <!-- Contenu FRANÇAIS (tout est dans un bloc data-lang="fr") -->
+        <div data-lang="fr">
+            <p>
+                <strong>16 ans en Chine</strong> (2007-2008 et 2009-2024) :
+            </p>
+            <ul>
+                <li><strong>Immersion linguistique</strong> : Maîtrise du chinois (niveau natif, nom chinois : 欧贵良).
+                </li>
+                <li><strong>Expérience professionnelle</strong> : Gestion de projets bilingues, adaptation culturelle.
+                </li>
+                <li><strong>Projet marquant</strong> : Création du site <a
+                        href="https://web.archive.org/web/20080411223922/http://www.brucelee.fr/" target="_blank">Bruce
+                        Lee (李小龙, 2008)</a> en XHTML/PHP/SQL (avec Photoshop pour le design).</li>
+            </ul>
+        </div>
+        <!-- Contenu CHINOIS (tout est dans un bloc data-lang="zh" + masqué par défaut) -->
+        <div data-lang="zh" style="display: none;">
+            <p>
+                <strong>在中国生活16年</strong>（2007-2008和2009-2024）：
+            </p>
+            <ul>
+                <li><strong>语言沉浸</strong>：中文水平接近母语（中文名：欧贵良）。</li>
+                <li><strong>职业经历</strong>：双语项目管理，跨文化适应。</li>
+                <li><strong>代表项目</strong>：2008年用XHTML/PHP/SQL（Photoshop设计）创建的<a
+                        href="https://web.archive.org/web/20080411223922/http://www.brucelee.fr/"
+                        target="_blank">李小龙网站</a>。</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Section "Projets" -->
@@ -45,40 +89,206 @@
         <h2 data-lang="fr">Projets</h2>
         <h2 data-lang="zh" style="display: none;">项目</h2>
         <ul>
-            <li data-lang="fr"><strong>Ce site !</strong> - Mon premier portfolio responsive, combinant HTML/CSS/JS et
-                contenu bilingue.</li>
-            <li data-lang="zh" style="display: none;"><strong>这个网站！</strong> - 我的第一个响应式作品集，结合了HTML/CSS/JS和双语内容。</li>
-            <li data-lang="fr"><strong>Site Bruce Lee (2008)</strong> - Un site en XHTML/PHP/SQL créé en 2008, avec une
-                base de données et des images Photoshop. Projet à recréer plus tard.</li>
-            <li data-lang="zh" style="display: none;"><strong>李小龙·法国网站（2008年）</strong> -
-                2008年用XHTML/PHP/SQL创建的网站，带有数据库和Photoshop图片。计划将来重新创建。</li>
+            <li data-lang="fr">
+                <strong><a href="https://web.archive.org/web/20080411223922/http://www.brucelee.fr/"
+                        target="_blank">Site Bruce Lee (李小龙, 2008)</a></strong> :
+                Site en XHTML/PHP/SQL avec base de données et design Photoshop. Preuve de compétences techniques
+                acquises il y a 20 ans.
+            </li>
+            <li data-lang="zh" style="display: none;">
+                <strong><a href="https://web.archive.org/web/20080411223922/http://www.brucelee.fr/"
+                        target="_blank">李小龙网站（2008年）</a></strong>：
+                用XHTML/PHP/SQL和Photoshop设计的网站，带有数据库。20年前获得的技术技能证明。
+            </li>
+            <li data-lang="fr">
+                <strong>Glossaire IT Français-Chinois</strong> :
+                Traduction de 20 termes techniques (HTML, CSS, Git, etc.) pour faciliter les échanges entre équipes
+                francophones et sinophones.
+                <a href="#glossaire">Voir le glossaire</a>.
+            </li>
+            <li data-lang="zh" style="display: none;">
+                <strong>IT术语中法对照表</strong>：
+                翻译了20个技术术语（HTML、CSS、Git等），便于法语和中文团队交流。
+                <a href="#glossaire">查看对照表</a>。
+            </li>
         </ul>
     </section>
+
+    <!-- Section "Glossaire IT" -->
+    <section id="glossaire" class="glossary-section">
+        <!-- Titre bilingue -->
+        <h2 data-lang="fr">Glossaire IT Français-Chinois</h2>
+        <h2 data-lang="zh" style="display: none;">IT术语中法对照表</h2>
+
+        <!-- Tableau FRANÇAIS (affiché par défaut) -->
+        <div data-lang="fr">
+            <table class="glossary-table">
+                <thead>
+                    <tr>
+                        <th>Terme Français</th>
+                        <th>Terme Chinois</th>
+                        <th>Explication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>超文本标记语言</td>
+                        <td>Langage de balisage pour créer des pages web.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>层叠样式表</td>
+                        <td>Langage pour styliser les pages web.</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Git（版本控制系统）</td>
+                        <td>Outil de gestion de versions pour le code.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>JavaScript/脚本语言</td>
+                        <td>Langage de programmation pour le web.</td>
+                    </tr>
+                    <tr>
+                        <td>API</td>
+                        <td>API/应用程序接口</td>
+                        <td>Interface pour communiquer entre logiciels.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tableau CHINOIS (masqué par défaut) -->
+        <div data-lang="zh" style="display: none;">
+            <table class="glossary-table">
+                <thead>
+                    <tr>
+                        <th>法语术语</th>
+                        <th>中文术语</th>
+                        <th>说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>超文本标记语言</td>
+                        <td>用于创建网页的标记语言。</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>层叠样式表</td>
+                        <td>用于网页样式设计的语言。</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Git（版本控制系统）</td>
+                        <td>代码版本控制工具。</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>JavaScript/脚本语言</td>
+                        <td>用于网页交互的编程语言。</td>
+                    </tr>
+                    <tr>
+                        <td>API</td>
+                        <td>API/应用程序接口</td>
+                        <td>软件间通信的接口。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
 
     <!-- Section "Compétences" -->
     <section id="competences">
         <h2 data-lang="fr">Compétences</h2>
         <h2 data-lang="zh" style="display: none;">技能</h2>
-        <ul>
-            <li data-lang="fr"><strong>Langues :</strong> Français (natif), Chinois (niveau C1, 16 ans en Chine),
-                Anglais (intermédiaire).</li>
-            <li data-lang="zh" style="display: none;"><strong>语言：</strong> 法语（母语），中文（C1水平，在中国生活10年），英语（中级）。</li>
-            <li data-lang="fr"><strong>IT :</strong> HTML/CSS/JS, XHTML, PHP/SQL, Git/GitHub, Photoshop.</li>
-            <li data-lang="zh" style="display: none;"><strong>IT：</strong> HTML/CSS/JS, XHTML, PHP/SQL, Git/GitHub,
-                Photoshop。</li>
-        </ul>
+        <div class="competences-grid">
+            <div>
+                <h3 data-lang="fr">Langues</h3>
+                <h3 data-lang="zh" style="display: none;">语言</h3>
+                <ul>
+                    <li data-lang="fr">Français (natif)</li>
+                    <li data-lang="zh" style="display: none;">法语（母语）</li>
+                    <li data-lang="fr">Chinois (niveau natif, 16 ans en Chine, nom chinois : 欧贵良)</li>
+                    <li data-lang="zh" style="display: none;">中文（母语水平，在中国生活16年，中文名：欧贵良）</li>
+                    <li data-lang="fr">Anglais (intermédiaire)</li>
+                    <li data-lang="zh" style="display: none;">英语（中级）</li>
+                </ul>
+            </div>
+            <div>
+                <h3 data-lang="fr">IT</h3>
+                <h3 data-lang="zh" style="display: none;">IT技能</h3>
+                <ul>
+                    <li data-lang="fr">HTML/CSS, XHTML</li>
+                    <li data-lang="zh" style="display: none;">HTML/CSS, XHTML</li>
+                    <li data-lang="fr">PHP/SQL (base de données)</li>
+                    <li data-lang="zh" style="display: none;">PHP/SQL（数据库）</li>
+                    <li data-lang="fr">JavaScript (débutant)</li>
+                    <li data-lang="zh" style="display: none;">JavaScript（初级）</li>
+                    <li data-lang="fr">Git/GitHub</li>
+                    <li data-lang="zh" style="display: none;">Git/GitHub</li>
+                    <li data-lang="fr">Photoshop (design web)</li>
+                    <li data-lang="zh" style="display: none;">Photoshop（网页设计）</li>
+                </ul>
+            </div>
+            <div>
+                <h3 data-lang="fr">Autres</h3>
+                <h3 data-lang="zh" style="display: none;">其他技能</h3>
+                <ul>
+                    <li data-lang="fr">Traduction technique (IT, culturel)</li>
+                    <li data-lang="zh" style="display: none;">技术翻译（IT、文化）</li>
+                    <li data-lang="fr">Gestion de projets bilingues</li>
+                    <li data-lang="zh" style="display: none;">双语项目管理</li>
+                    <li data-lang="fr">Adaptation culturelle France-Chine</li>
+                    <li data-lang="zh" style="display: none;">中法跨文化适应</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Section "Contact" -->
     <section id="contact">
         <h2 data-lang="fr">Contact</h2>
         <h2 data-lang="zh" style="display: none;">联系我</h2>
-        <p data-lang="fr">Email : tonemail@example.com | LinkedIn : https://www.linkedin.com/in/guillaume-aubry-65751842
+        <p data-lang="fr">
+            Email : tonemail@example.com |
+            LinkedIn : <a href="https://www.linkedin.com/in/guillaume-aubry-65751842"
+                target="_blank">guillaume-aubry-65751842</a>
         </p>
-        <p data-lang="zh" style="display: none;">邮箱：tonemail@example.com |
-            领英：https://www.linkedin.com/in/guillaume-aubry-65751842</p>
-        <button onclick="redirectToLinkedIn()" data-lang="fr">Contactez-moi sur LinkedIn !</button>
-        <button onclick="redirectToLinkedIn()" data-lang="zh" style="display: none;">在领英联系我！</button>
+        <p data-lang="zh" style="display: none;">
+            邮箱：tonemail@example.com |
+            领英：<a href="https://www.linkedin.com/in/guillaume-aubry-65751842"
+                target="_blank">guillaume-aubry-65751842</a>
+        </p>
+
+        <!-- Bouton LinkedIn -->
+        <button onclick="redirectToLinkedIn()" data-lang="fr" style="margin-bottom: 20px;">
+            Contactez-moi sur LinkedIn !
+        </button>
+        <button onclick="redirectToLinkedIn()" data-lang="zh" style="display: none; margin-bottom: 20px;">
+            在领英联系我！
+        </button>
+
+        <!-- Formulaire Formspree -->
+        <form action="https://formspree.io/f/xbdddpyy" method="POST">
+            <div>
+                <label for="email" data-lang="fr">Email :</label>
+                <label for="email" data-lang="zh" style="display: none;">邮箱：</label>
+                <input type="email" name="email" id="email" placeholder="votre@email.com" required>
+            </div>
+            <div>
+                <label for="message" data-lang="fr">Message :</label>
+                <label for="message" data-lang="zh" style="display: none;">留言：</label>
+                <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" data-lang="fr">Envoyer</button>
+            <button type="submit" data-lang="zh" style="display: none;">发送</button>
+        </form>
+        <div id="form-message" style="display: none;"></div>
     </section>
 
     <script src="script.js"></script>
